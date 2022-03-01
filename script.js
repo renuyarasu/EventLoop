@@ -27,4 +27,16 @@ setTimeout(() => {
     console.log('Timeout Function - 3s');
 }, 3000) // CallBack Queue
 
+// fetch()
+fetch('https://api.example.com')
+    .then(function callFetch() {
+        console.log('fetch Function');
+    });
 console.log('End');
+
+// Microtasks queue handling Promises
+// CallBack Queue is not only for setTimeout() also it is for DOM API's or web API's except Promises and MutationObserver
+
+
+
+
