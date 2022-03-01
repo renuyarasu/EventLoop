@@ -8,10 +8,23 @@ console.clear();
 04. MicroTask Queue
 */
 
+/*  Web APIs
+==============
+• setTimeout()
+• fetch()
+• console
+• DOM API
+*/
+
+// JavaScript is a single threaded synchronous language
 
 console.log('Start');
 
 let myFunction = () => console.log('My Function');
 myFunction();
+
+setTimeout(() => {
+    console.log('Timeout Function - 3s');
+}, 3000) // CallBack Queue
 
 console.log('End');
